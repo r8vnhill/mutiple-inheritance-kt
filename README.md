@@ -2,4 +2,4 @@
 
 ## Lessons (spanish)
 
-- [Técnicas de diseño de propiedades](https://ravenhill.pages.dev/ccxxxx/lessons/pbt-iii)
+- [Herencia múltiple](https://ravenhill.pages.dev/ccxxxx/lessons/programacion-orientada-a-objetos-iv)
