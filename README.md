@@ -1,4 +1,4 @@
-# Property based testing
+# Herencia múltiple
 
 ## Lessons (spanish)
 
