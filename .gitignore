@@ -167,7 +167,7 @@ fabric.properties
 
 ### Gradle template
 **/build/
-!src/**/build/
+!multiple-inheritance/src/**/build/
 
 # Ignore Gradle GUI config
 gradle-app.setting

@@ -1,6 +1,6 @@
 rootProject.name = "mutiple-inheritance-kt"
 
-include(":single-inheritance", ":interfaces-revisited")
+include(":single-inheritance", ":interfaces-revisited", ":multiple-inheritance")
 
 pluginManagement {
     repositories {
