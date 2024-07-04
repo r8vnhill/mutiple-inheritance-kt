@@ -1,5 +1,26 @@
 package cl.ravenhill.employee
 
+/**
+ * Interface representing an employee capable of earning overtime.
+ *
+ * ## Usage:
+ * This interface extends the [Employee] interface and adds an extra coefficient for calculating overtime pay. It
+ * provides a default implementation for calculating the total salary based on extra hours worked.
+ *
+ * ### Example 1: Implementing the OvertimeCapable Interface
+ * ```
+ * class Developer(
+ *     override val baseSalary: Int,
+ *     override val extraCoefficient: Int
+ * ) : OvertimeCapable
+ *
+ * val developer = Developer(baseSalary = 50000, extraCoefficient = 200)
+ * val totalSalary = developer.calculateSalary(extraHours = 10)
+ * println(totalSalary) // Output: 52000
+ * ```
+ * @property baseSalary The base salary of the employee.
+ * @property extraCoefficient The coefficient used to calculate the extra salary based on extra hours worked.
+ */
 interface OvertimeCapable : Employee {
     val extraCoefficient: Int
 
@@ -9,5 +30,5 @@ interface OvertimeCapable : Employee {
      * @param extraHours The number of extra hours worked.
      * @return The total salary including extra hours.
      */
-    fun calculateSalary(extraHours: Int): Int
+    fun calculateSalary(extraHours: Int) = baseSalary + (extraCoefficient * extraHours)
 }
