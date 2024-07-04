@@ -1,10 +1,15 @@
 plugins {
-    kotlin("jvm") version "2.0.0"
+    kotlin("jvm")
+    id("io.gitlab.arturbosch.detekt")
 }
 
-group = "cl.ravenhill"
-version = "1.0.0"
+allprojects {
+    group = "multiple-inheritance-kt"
+    version = extra["multiple-inheritance-kt.version"] as String
+}
 
-kotlin {
-    jvmToolchain(17)
+subprojects {
+    repositories {
+        mavenCentral()
+    }
 }
