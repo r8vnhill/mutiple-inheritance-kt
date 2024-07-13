@@ -1,4 +1,4 @@
-rootProject.name = "mutiple-inheritance-kt"
+rootProject.name = "multiple-inheritance-kt"
 
 include(":single-inheritance", ":interfaces-revisited", ":multiple-inheritance")
 

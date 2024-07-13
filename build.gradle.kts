@@ -4,8 +4,8 @@ plugins {
 }
 
 allprojects {
-    group = "multiple-inheritance-kt"
-    version = extra["multiple-inheritance-kt.version"] as String
+    group = rootProject.name
+    version = extra["$group.version"] as String
 }
 
 subprojects {
